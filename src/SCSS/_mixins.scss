@@ -1,0 +1,11 @@
+@mixin desktop-screen-down {
+  @media (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin desktop-screen-up {
+  @media (min-width: 1201px) {
+    @content;
+  }
+}

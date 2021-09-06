@@ -1,0 +1,17 @@
+#game-board-div {
+  border: 1px solid purple;
+  margin-top: 10px;
+  width: 80%;
+  flex-wrap: wrap;
+}
+
+// TrumpIcon.js
+.trump-svg {
+  user-select: none;
+  width: 70px;
+  margin: 2px;
+  // cursor: url("../Assets/hammer.svg"), auto;s
+  &.target {
+    filter: drop-shadow(1px 1px 10px rgb(17, 0, 255));
+  }
+}

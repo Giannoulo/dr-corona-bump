@@ -1,0 +1,6 @@
+#controls-div {
+  margin-top: 10px;
+  & > span {
+    font-size: #{"min(5vw, 22px)"}; // Got different unit type error from Sass
+  }
+}
