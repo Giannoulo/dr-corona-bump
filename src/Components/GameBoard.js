@@ -9,7 +9,6 @@ const GameBoard = () => {
     const incrementTargetClicks = () => {
       setTargetClicked(targetClicked + 1);
     };
-    console.log(targetClicked);
     setIconsJSX(getTrumpIcons(20, incrementTargetClicks));
   }, [targetClicked]);
 

@@ -1,27 +1,13 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Lottie from "react-lottie";
 import vomit from "../Assets/vomited.json";
-import trumpHit from "../Assets/10-BILLION.mp3";
+
+import { useSelector, useDispatch } from "react-redux";
+import { increment, reset, selectCount } from "../Redux/counterSlice";
 
 const SmileyIcon = (props) => {
   const [play, setPlay] = useState(false);
 
-  const playAudio = () => {
-    new Audio(trumpHit).play();
-  };
-  //   <img
-  //   onClick={
-  //     props.clickCallback === null
-  //       ? null
-  //       : () => {
-  //           props.clickCallback();
-  //           playAudio();
-  //         }
-  //   }
-  //   alt="Trump icon"
-  //   draggable="false"
-  //   className={`trump-svg ${props.classNameProp}`}
-  // />
   const defaultOptions = {
     loop: false,
     autoplay: false,
@@ -30,15 +16,12 @@ const SmileyIcon = (props) => {
       preserveAspectRatio: "xMidYMid slice",
     },
   };
-  useEffect(() => {
-    console.log(play);
-  }, [play]);
   return (
     <div onClick={() => setPlay(true)}>
       <Lottie
         options={defaultOptions}
-        height={100}
-        width={100}
+        height={70}
+        width={70}
         isPaused={false}
         isStopped={!play}
         isClickToPauseDisabled={true}
