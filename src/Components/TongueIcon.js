@@ -2,13 +2,12 @@ import React, { useState } from "react";
 import Lottie from "react-lottie";
 import tongue from "../Assets/tongue-out.json";
 
-import { useSelector, useDispatch } from "react-redux";
-import { increment, reset, selectCount } from "../Redux/counterSlice";
+import { useDispatch } from "react-redux";
+import { incrementCount } from "../Redux/counterSlice";
 
 const TongueIcon = (props) => {
   const [play, setPlay] = useState(false);
 
-  const count = useSelector(selectCount);
   const dispatch = useDispatch();
 
   const defaultOptions = {
@@ -23,7 +22,7 @@ const TongueIcon = (props) => {
     <div
       onClick={() => {
         if (!play) {
-          dispatch(increment());
+          dispatch(incrementCount());
         }
         setPlay(true);
         setTimeout(() => {
@@ -32,6 +31,7 @@ const TongueIcon = (props) => {
       }}
     >
       <Lottie
+        className="vomit-lottie"
         options={defaultOptions}
         speed={4}
         height={70}

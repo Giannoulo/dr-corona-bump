@@ -2,11 +2,16 @@ import React, { useState } from "react";
 import Lottie from "react-lottie";
 import vomit from "../Assets/vomited.json";
 
-import { useSelector, useDispatch } from "react-redux";
-import { increment, reset, selectCount } from "../Redux/counterSlice";
+import { useDispatch, useSelector } from "react-redux";
+import { resetCount } from "../Redux/counterSlice";
+import { selectLives, decrementLives, resetLives } from "../Redux/livesSlice";
 
 const SmileyIcon = (props) => {
   const [play, setPlay] = useState(false);
+
+  const dispatch = useDispatch();
+
+  const lives = useSelector(selectLives);
 
   const defaultOptions = {
     loop: false,
@@ -17,7 +22,19 @@ const SmileyIcon = (props) => {
     },
   };
   return (
-    <div onClick={() => setPlay(true)}>
+    <div
+      onClick={() => {
+        if (!play) {
+          if (lives > 0) {
+            dispatch(decrementLives());
+          } else {
+            dispatch(resetCount());
+            dispatch(resetLives());
+          }
+        }
+        setPlay(true);
+      }}
+    >
       <Lottie
         options={defaultOptions}
         height={70}
