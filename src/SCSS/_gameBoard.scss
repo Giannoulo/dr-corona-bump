@@ -1,6 +1,6 @@
 #game-board-div {
-  border: 1px solid purple;
-  margin-top: 10px;
+  // border: 1px solid purple;
+  margin-top: 20px;
   width: 80%;
   flex-wrap: wrap;
 }
@@ -13,5 +13,13 @@
   // cursor: url("../Assets/hammer.svg"), auto;s
   &.target {
     filter: drop-shadow(1px 1px 10px rgb(17, 0, 255));
+  }
+}
+
+#tongue-icon {
+  transform: scale(3vw) !important;
+  & path {
+    // stroke: red;
+    filter: drop-shadow(2px 1px 1px red);
   }
 }

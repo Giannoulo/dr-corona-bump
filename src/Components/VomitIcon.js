@@ -19,6 +19,7 @@ const SmileyIcon = (props) => {
     animationData: vomit,
     rendererSettings: {
       preserveAspectRatio: "xMidYMid slice",
+      id: "vomit-icon",
     },
   };
   return (

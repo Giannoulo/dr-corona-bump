@@ -16,6 +16,7 @@ const TongueIcon = (props) => {
     animationData: tongue,
     rendererSettings: {
       preserveAspectRatio: "xMidYMid slice",
+      id: "tongue-icon",
     },
   };
   return (
