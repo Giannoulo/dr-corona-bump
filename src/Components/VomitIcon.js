@@ -4,13 +4,14 @@ import vomit from "../Assets/vomited.json";
 import vomitSound from "../Assets/vomit.mp3";
 
 import { useDispatch, useSelector } from "react-redux";
-import { resetCount } from "../Redux/counterSlice";
+import { resetCount, selectCount } from "../Redux/counterSlice";
 import { selectLives, decrementLives, resetLives } from "../Redux/livesSlice";
 
 const SmileyIcon = (props) => {
   const [play, setPlay] = useState(false);
   const dispatch = useDispatch();
   const lives = useSelector(selectLives);
+  const count = useSelector(selectCount);
 
   const playAudio = () => {
     new Audio(vomitSound).play();
@@ -30,7 +31,7 @@ const SmileyIcon = (props) => {
       onClick={() => {
         if (!play) {
           playAudio();
-          if (lives > 0) {
+          if (lives > 0 && count > 0) {
             dispatch(decrementLives());
           } else {
             dispatch(resetCount());

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { getTrumpIcons } from "../Utils/GameBoardFunctions";
+import { getBoardIcons } from "../Utils/GameBoardFunctions";
 
 const GameBoard = () => {
   const [targetClicked, setTargetClicked] = useState(0);
@@ -9,7 +9,7 @@ const GameBoard = () => {
     const incrementTargetClicks = () => {
       setTargetClicked(targetClicked + 1);
     };
-    setIconsJSX(getTrumpIcons(20, incrementTargetClicks));
+    setIconsJSX(getBoardIcons(20, incrementTargetClicks));
   }, [targetClicked]);
 
   return (

@@ -5,15 +5,19 @@ import { selectCount } from "../Redux/counterSlice";
 import { selectLives } from "../Redux/livesSlice";
 
 import { calculateScore } from "../Utils/ControlsFunctions";
+import Timer from "./Timer";
 
 const Controls = () => {
-  let timeleft = 20;
-
   const count = useSelector(selectCount);
   const lives = useSelector(selectLives);
+
   return (
     <div className="container" id="controls-div">
-      <span>{`Score: ${calculateScore(count)} Time: ${timeleft}s Lives: ${lives}`}</span>
+      <span>
+        {`Score: ${calculateScore(count)} Time: `}
+        <Timer />
+        {` Lives: ${lives}`}
+      </span>
     </div>
   );
 };

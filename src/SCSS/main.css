@@ -21,6 +21,8 @@
 
 #controls-div {
   margin: 30px 0px 20px 0px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: brown;
 }
 
 #controls-div > span {
@@ -32,20 +34,6 @@
   width: 80%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-}
-
-.trump-svg {
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  width: 70px;
-  margin: 2px;
-}
-
-.trump-svg.target {
-  -webkit-filter: drop-shadow(1px 1px 10px #1100ff);
-          filter: drop-shadow(1px 1px 10px #1100ff);
 }
 
 #tongue-icon {

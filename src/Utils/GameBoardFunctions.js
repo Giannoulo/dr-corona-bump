@@ -11,7 +11,7 @@ const createClassNameArray = (numberOfIcons) => {
   return classNameArray;
 };
 
-export const getTrumpIcons = (numberOfIcons, clickCallback) => {
+export const getBoardIcons = (numberOfIcons, clickCallback) => {
   return createClassNameArray(numberOfIcons).map((className, index) => {
     if (className === "target")
       return <TongueIcon key={index} classNameProp={className} clickCallback={clickCallback} />;
