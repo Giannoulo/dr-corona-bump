@@ -14,7 +14,7 @@ const Timer = () => {
     return () => {
       clearInterval(myInterval);
     };
-  });
+  }, [time]);
   return <span>{time}</span>;
 };
 export default Timer;
