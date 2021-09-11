@@ -1,18 +1,20 @@
 #header-row {
   padding: 30px 0px;
-  box-shadow: 1px 2px 10px rgb(243, 109, 0);
-  border-radius: 10px;
+  box-shadow: 1px 2px 10px $corona-orange;
+  // border-radius: 10px;
+  background-image: url("../Assets/Lr1pnoS0.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 #header-col {
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 42px;
-  color: chocolate;
-  filter: drop-shadow(2px 2px 1px rgb(0, 0, 0));
+  color: $corona-orange;
+  color: $corona-blue;
 }
 
 #header-col-small {
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
-  color: rgb(107, 45, 0);
+  color: $corona-blue;
 }

@@ -11,12 +11,28 @@ const createClassNameArray = (numberOfIcons) => {
   return classNameArray;
 };
 
+const calculateTileDimensions = () => {
+  const viewWidth = window.innerWidth;
+  console.log(viewWidth);
+  const tilePixelSize = Math.min(100, viewWidth / 5);
+  console.log(tilePixelSize);
+  return tilePixelSize;
+};
+
 export const getBoardIcons = (numberOfIcons, clickCallback) => {
+  const tilePixelSize = calculateTileDimensions();
   return createClassNameArray(numberOfIcons).map((className, index) => {
     if (className === "target")
-      return <TongueIcon key={index} classNameProp={className} clickCallback={clickCallback} />;
+      return (
+        <TongueIcon
+          key={index}
+          classNameProp={className}
+          clickCallback={clickCallback}
+          pixelSize={tilePixelSize}
+        />
+      );
     else {
-      return <VomitIcon key={index} classNameProp={className} />;
+      return <VomitIcon key={index} classNameProp={className} pixelSize={tilePixelSize} />;
     }
   });
 };

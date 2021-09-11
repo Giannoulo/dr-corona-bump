@@ -28,6 +28,7 @@ const SmileyIcon = (props) => {
   };
   return (
     <div
+      className="tile-divs"
       onClick={() => {
         if (!play) {
           playAudio();
@@ -43,8 +44,8 @@ const SmileyIcon = (props) => {
     >
       <Lottie
         options={defaultOptions}
-        height={70}
-        width={70}
+        height={props.pixelSize}
+        width={props.pixelSize}
         isPaused={false}
         isStopped={!play}
         isClickToPauseDisabled={true}

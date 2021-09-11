@@ -1,7 +1,6 @@
 #controls-div {
   margin: 30px 0px 20px 0px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  color: brown;
+  color: $corona-orange;
   & > span {
     font-size: #{"min(5vw, 22px)"}; // Got different unit type error from Sass
   }

@@ -9,3 +9,9 @@
     @content;
   }
 }
+
+@mixin small-mobile-screen-down {
+  @media (max-width: 350px) {
+    @content;
+  }
+}

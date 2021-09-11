@@ -14,14 +14,18 @@ body {
   top: 0px;
   left: 0px;
   margin: 0;
-  background-image: url("../Assets/Confederate_Rebel_Flag.svg");
-  background-repeat: repeat;
-  background-size: 20%;
+  background-color: $corona-orange;
 }
 
 .App {
+  @font-face {
+    font-family: "letters-from-sweden";
+    src: local("letters-from-sweden"),
+      url("../Assets/Letters-from-Sweden-HeroinePro-Bold.otf") format("opentype");
+  }
+  font-family: "letters-from-sweden";
   position: relative;
-  background-color: white;
+  background-color: $corona-white;
   width: 100%;
   height: 100vh;
   @include desktop-screen-up {
@@ -29,12 +33,13 @@ body {
     width: 70%;
     height: 100vh;
   }
-  &.unclicked {
-    cursor: url("../Assets/hammer.svg"), auto;
-  }
-  &.clicked {
-    cursor: url("../Assets/hammer-clicked.svg"), auto;
-  }
+  // Custom cursor
+  // &.unclicked {
+  //   cursor: url("../Assets/hammer.svg"), auto;
+  // }
+  // &.clicked {
+  //   cursor: url("../Assets/hammer-clicked.svg"), auto;
+  // }
 }
 
 .container {

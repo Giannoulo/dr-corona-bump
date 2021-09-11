@@ -3,7 +3,6 @@ import { getBoardIcons } from "../Utils/GameBoardFunctions";
 
 const GameBoard = () => {
   const [targetClicked, setTargetClicked] = useState(0);
-
   const [iconsJSX, setIconsJSX] = useState("");
   useEffect(() => {
     const incrementTargetClicks = () => {

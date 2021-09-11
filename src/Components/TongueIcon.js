@@ -40,8 +40,8 @@ const TongueIcon = (props) => {
         className="vomit-lottie"
         options={defaultOptions}
         speed={4}
-        height={70}
-        width={70}
+        height={props.pixelSize}
+        width={props.pixelSize}
         isPaused={false}
         isStopped={!play}
         isClickToPauseDisabled={true}

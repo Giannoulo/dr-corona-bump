@@ -1,28 +1,27 @@
 #header-row {
   padding: 30px 0px;
-  -webkit-box-shadow: 1px 2px 10px #f36d00;
-          box-shadow: 1px 2px 10px #f36d00;
-  border-radius: 10px;
+  -webkit-box-shadow: 1px 2px 10px #ff603c;
+          box-shadow: 1px 2px 10px #ff603c;
+  background-image: url("../Assets/Lr1pnoS0.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 #header-col {
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 42px;
-  color: chocolate;
-  -webkit-filter: drop-shadow(2px 2px 1px black);
-          filter: drop-shadow(2px 2px 1px black);
+  color: #ff603c;
+  color: #092e53;
 }
 
 #header-col-small {
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
-  color: #6b2d00;
+  color: #092e53;
 }
 
 #controls-div {
   margin: 30px 0px 20px 0px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  color: brown;
+  color: #ff603c;
 }
 
 #controls-div > span {
@@ -34,6 +33,12 @@
   width: 80%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+@media (max-width: 350px) {
+  #game-board-div {
+    width: 97%;
+  }
 }
 
 #tongue-icon {
@@ -54,16 +59,22 @@ body {
   top: 0px;
   left: 0px;
   margin: 0;
-  background-image: url("../Assets/Confederate_Rebel_Flag.svg");
-  background-repeat: repeat;
-  background-size: 20%;
+  background-color: #ff603c;
 }
 
 .App {
+  font-family: "letters-from-sweden";
   position: relative;
   background-color: white;
   width: 100%;
   height: 100vh;
+}
+
+@font-face {
+  .App {
+    font-family: "letters-from-sweden";
+    src: local("letters-from-sweden"), url("../Assets/Letters-from-Sweden-HeroinePro-Bold.otf") format("opentype");
+  }
 }
 
 @media (min-width: 1201px) {
@@ -72,14 +83,6 @@ body {
     width: 70%;
     height: 100vh;
   }
-}
-
-.App.unclicked {
-  cursor: url("../Assets/hammer.svg"), auto;
-}
-
-.App.clicked {
-  cursor: url("../Assets/hammer-clicked.svg"), auto;
 }
 
 .container {
