@@ -4,6 +4,7 @@ import Controls from "./Components/Controls";
 import GameBoard from "./Components/GameBoard";
 
 const App = () => {
+  window.screen.orientation.lock("portrait");
   const [cursor, setCursor] = useState("unclicked");
 
   const changeCursor = () => {
