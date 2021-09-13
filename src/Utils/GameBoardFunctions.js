@@ -13,9 +13,7 @@ const createClassNameArray = (numberOfIcons) => {
 
 const calculateTileDimensions = () => {
   const viewWidth = window.innerWidth;
-  console.log(viewWidth);
   const tilePixelSize = Math.min(90, viewWidth / 5);
-  console.log(tilePixelSize);
   return tilePixelSize;
 };
 
