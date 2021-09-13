@@ -4,7 +4,7 @@ import "./SCSS/main.css";
 import App from "./App";
 import { store } from "./Redux/store";
 import { Provider } from "react-redux";
-import * as serviceWorker from "../public/serviceWorker";
+import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -18,7 +18,7 @@ ReactDOM.render(
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.register("/sw.js");
+// serviceWorker.register("/sw.js");
 // registerSW();
 
 // async function registerSW() {
