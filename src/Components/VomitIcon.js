@@ -44,6 +44,7 @@ const SmileyIcon = (props) => {
     >
       <Lottie
         options={defaultOptions}
+        speed={2}
         height={props.pixelSize}
         width={props.pixelSize}
         isPaused={false}

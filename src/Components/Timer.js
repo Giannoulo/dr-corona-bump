@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
+import { saveTopScoreLocaly } from "../Utils/ControlsFunctions";
 
-const Timer = () => {
-  const [time, setTime] = useState(20);
+const Timer = (props) => {
+  const [time, setTime] = useState(10);
+
   useEffect(() => {
     let myInterval = setInterval(() => {
       if (time > 0) {
@@ -15,6 +17,13 @@ const Timer = () => {
       clearInterval(myInterval);
     };
   }, [time]);
+
+  useEffect(() => {
+    if (time === 0) {
+      saveTopScoreLocaly(props.count);
+    }
+  });
+
   return <span>{time}</span>;
 };
 export default Timer;

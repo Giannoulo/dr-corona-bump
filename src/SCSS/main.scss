@@ -4,6 +4,7 @@
 @import "./header";
 @import "./controls";
 @import "./gameBoard";
+@import "./topScore";
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
@@ -33,13 +34,6 @@ body {
     width: 70%;
     height: 100vh;
   }
-  // Custom cursor
-  // &.unclicked {
-  //   cursor: url("../Assets/hammer.svg"), auto;
-  // }
-  // &.clicked {
-  //   cursor: url("../Assets/hammer-clicked.svg"), auto;
-  // }
 }
 
 .container {

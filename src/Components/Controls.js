@@ -15,7 +15,7 @@ const Controls = () => {
     <div className="container" id="controls-div">
       <span>
         {`Score: ${calculateScore(count)} Time: `}
-        <Timer />
+        <Timer count={count} />
         {` Lives: ${lives}`}
       </span>
     </div>
