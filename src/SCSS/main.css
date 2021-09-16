@@ -61,11 +61,13 @@
   top: 83px;
   right: 12px;
   color: white;
-  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 1000ms;
+  transition: opacity 1000ms;
 }
 
 #install-button-constainer.visible {
-  visibility: visible;
+  opacity: 1;
 }
 
 body {
