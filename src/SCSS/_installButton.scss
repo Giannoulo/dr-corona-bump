@@ -4,4 +4,7 @@
   right: 12px;
   color: white;
   visibility: hidden;
+  &.visible {
+    visibility: visible;
+  }
 }
