@@ -22,7 +22,7 @@ const InstallButton = () => {
     <div
       id="install-button-constainer"
       className={visibleInstallButton ? "visible" : ""}
-      onClick={installPrompt ? installPrompt.prompt : undefined}
+      onClick={() => (installPrompt ? installPrompt.prompt() : undefined)}
     >
       <FontAwesomeIcon icon={faMobileAlt} /> Install App
     </div>
