@@ -2,7 +2,7 @@ import React, {useState, useEffect} from "react";
 import {saveTopScoreLocaly} from "../Utils/ControlsFunctions";
 
 const Timer = (props) => {
-  const [time, setTime] = useState(5);
+  const [time, setTime] = useState(20);
 
   useEffect(() => {
     let myInterval = setInterval(() => {
