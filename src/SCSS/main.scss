@@ -26,11 +26,6 @@ body {
 }
 
 .App {
-  @font-face {
-    font-family: "letters-from-sweden";
-    src: local("letters-from-sweden"),
-      url("../Assets/Letters-from-Sweden-HeroinePro-Bold.otf") format("opentype");
-  }
   font-family: "letters-from-sweden";
   position: relative;
   background-color: $corona-orange;

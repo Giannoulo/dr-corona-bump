@@ -14,10 +14,10 @@ const Controls = (props) => {
   return (
     <div className="container" id="controls-div">
       <span>
-        {`Time: `}
+        {`TIME: `}
         <Timer count={count} playCallback={props.playCallback} />
-        {`  Points: ${calculateScore(count)}`}
-        {`  Lives: ${lives}`}
+        {`  POINTS: ${calculateScore(count)}`}
+        {`  LIVES: ${lives}`}
       </span>
     </div>
   );

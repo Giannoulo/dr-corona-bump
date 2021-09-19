@@ -7,3 +7,9 @@ $corona-white: rgba(255, 255, 255, 255);
 $corona-yellow: rgba(253, 216, 89, 255);
 
 $corona-border: rgb(221, 92, 63);
+
+@font-face {
+  font-family: "letters-from-sweden";
+  src: local("letters-from-sweden"),
+    url("../Assets/Letters-from-Sweden-HeroinePro-Bold.otf") format("opentype");
+}
