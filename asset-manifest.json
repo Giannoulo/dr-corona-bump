@@ -1,25 +1,27 @@
 {
   "files": {
-    "main.css": "/dr-corona-bump/static/css/main.42b94aeb.chunk.css",
-    "main.js": "/dr-corona-bump/static/js/main.da1d8f84.chunk.js",
-    "main.js.map": "/dr-corona-bump/static/js/main.da1d8f84.chunk.js.map",
+    "main.css": "/dr-corona-bump/static/css/main.d43fe8dd.chunk.css",
+    "main.js": "/dr-corona-bump/static/js/main.b4c7c27f.chunk.js",
+    "main.js.map": "/dr-corona-bump/static/js/main.b4c7c27f.chunk.js.map",
     "runtime-main.js": "/dr-corona-bump/static/js/runtime-main.40aca070.js",
     "runtime-main.js.map": "/dr-corona-bump/static/js/runtime-main.40aca070.js.map",
-    "static/js/2.f2f3e7cf.chunk.js": "/dr-corona-bump/static/js/2.f2f3e7cf.chunk.js",
-    "static/js/2.f2f3e7cf.chunk.js.map": "/dr-corona-bump/static/js/2.f2f3e7cf.chunk.js.map",
+    "static/js/2.3dea26d7.chunk.js": "/dr-corona-bump/static/js/2.3dea26d7.chunk.js",
+    "static/js/2.3dea26d7.chunk.js.map": "/dr-corona-bump/static/js/2.3dea26d7.chunk.js.map",
     "index.html": "/dr-corona-bump/index.html",
     "service-worker.js": "/dr-corona-bump/service-worker.js",
     "service-worker.js.map": "/dr-corona-bump/service-worker.js.map",
-    "static/css/main.42b94aeb.chunk.css.map": "/dr-corona-bump/static/css/main.42b94aeb.chunk.css.map",
-    "static/js/2.f2f3e7cf.chunk.js.LICENSE.txt": "/dr-corona-bump/static/js/2.f2f3e7cf.chunk.js.LICENSE.txt",
-    "static/media/main.css": "/dr-corona-bump/static/media/Lr1pnoS0.204d7cc4.png",
-    "static/media/lick.57eaa5bd.mp3": "/dr-corona-bump/static/media/lick.57eaa5bd.mp3",
-    "static/media/vomit.831bf6e9.mp3": "/dr-corona-bump/static/media/vomit.831bf6e9.mp3"
+    "static/css/main.d43fe8dd.chunk.css.map": "/dr-corona-bump/static/css/main.d43fe8dd.chunk.css.map",
+    "static/js/2.3dea26d7.chunk.js.LICENSE.txt": "/dr-corona-bump/static/js/2.3dea26d7.chunk.js.LICENSE.txt",
+    "static/media/main.css": "/dr-corona-bump/static/media/Letters-from-Sweden-HeroinePro-Bold.ad4e6564.otf",
+    "static/media/corona-trademark.2d798160.svg": "/dr-corona-bump/static/media/corona-trademark.2d798160.svg",
+    "static/media/dr-corona-2.e337685b.svg": "/dr-corona-bump/static/media/dr-corona-2.e337685b.svg",
+    "static/media/dr-corona-title.5a244b4b.svg": "/dr-corona-bump/static/media/dr-corona-title.5a244b4b.svg",
+    "static/media/virus.502d0684.svg": "/dr-corona-bump/static/media/virus.502d0684.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.40aca070.js",
-    "static/js/2.f2f3e7cf.chunk.js",
-    "static/css/main.42b94aeb.chunk.css",
-    "static/js/main.da1d8f84.chunk.js"
+    "static/js/2.3dea26d7.chunk.js",
+    "static/css/main.d43fe8dd.chunk.css",
+    "static/js/main.b4c7c27f.chunk.js"
   ]
 }
