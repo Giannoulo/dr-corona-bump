@@ -11,14 +11,13 @@ const createClassNameArray = (numberOfIcons) => {
   return classNameArray;
 };
 
-const calculateTileDimensions = () => {
-  const viewWidth = window.innerWidth;
-  const tilePixelSize = Math.min(90, viewWidth / 5);
-  return tilePixelSize;
-};
+// const calculateTileDimensions = () => {
+//   const viewWidth = window.innerWidth;
+//   const tilePixelSize = Math.min(90, viewWidth / 5);
+//   return tilePixelSize;
+// };
 
 export const getBoardIcons = (numberOfIcons, clickCallback) => {
-  const tilePixelSize = calculateTileDimensions();
   return createClassNameArray(numberOfIcons).map((className, index) => {
     if (className === "target") return <VirusIcon key={index} clickCallback={clickCallback} />;
     else {

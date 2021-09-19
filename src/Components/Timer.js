@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "react";
-import { saveTopScoreLocaly } from "../Utils/ControlsFunctions";
+import React, {useState, useEffect} from "react";
+import {saveTopScoreLocaly} from "../Utils/ControlsFunctions";
 
 const Timer = (props) => {
-  const [time, setTime] = useState(10);
+  const [time, setTime] = useState(5);
 
   useEffect(() => {
     let myInterval = setInterval(() => {
@@ -21,8 +21,9 @@ const Timer = (props) => {
   useEffect(() => {
     if (time === 0) {
       saveTopScoreLocaly(props.count);
+      props.playCallback("gameOver");
     }
-  });
+  }, [time, props]);
 
   return <span>{time}</span>;
 };

@@ -1,0 +1,30 @@
+#gameover-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $corona-blue;
+  & .game-over-modal-text {
+    font-size: 24px;
+    width: 85%;
+    text-align: center;
+    color: $corona-white;
+    margin-bottom: 30px;
+  }
+  & > button {
+    margin-top: 50px;
+    width: 120px;
+    height: 40px;
+    border-radius: 6px;
+    border: 1px solid $corona-blue;
+    color: $corona-orange;
+    font-weight: 600;
+    font-size: 18px;
+  }
+}
+
+.game-over-modal-scores {
+  width: 85%;
+  text-align: center;
+  color: $corona-white;
+  font-size: 40px;
+}
