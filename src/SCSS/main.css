@@ -30,11 +30,23 @@
 #controls-div {
   margin: 0px 0px 5px 0px;
   color: white;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: min(5vw, 22px);
+  width: 97%;
+  margin: auto;
 }
 
-#controls-div > span {
-  font-weight: 600;
-  font-size: min(5vw, 22px);
+@media (min-width: 650px) {
+  #controls-div {
+    width: 550px;
+  }
+}
+
+#controls-div > div {
+  text-align: center;
+  width: 80%;
 }
 
 #game-board-div {
@@ -120,6 +132,7 @@
   color: #ff603c;
   font-weight: 600;
   font-size: 18px;
+  font-family: "letters-from-sweden";
 }
 
 .game-over-modal-scores {

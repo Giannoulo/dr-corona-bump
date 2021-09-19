@@ -1,8 +1,15 @@
 #controls-div {
   margin: 0px 0px 5px 0px;
   color: $corona-white;
-  & > span {
-    font-weight: 600;
-    font-size: #{"min(5vw, 22px)"}; // Got different unit type error from Sass
+  justify-content: space-between;
+  font-size: #{"min(5vw, 22px)"}; // Got different unit type error from Sass
+  width: 97%;
+  margin: auto;
+  @media (min-width: 650px) {
+    width: 550px;
+  }
+  & > div {
+    text-align: center;
+    width: 80%;
   }
 }
