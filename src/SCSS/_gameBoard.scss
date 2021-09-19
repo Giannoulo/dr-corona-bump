@@ -7,6 +7,9 @@
   @include small-mobile-screen-down {
     width: 97%;
   }
+  @media (min-width: 650px) {
+    width: 550px;
+  }
 }
 
 .game-icon {
