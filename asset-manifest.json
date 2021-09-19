@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/dr-corona-bump/static/css/main.f781ee6e.chunk.css",
-    "main.js": "/dr-corona-bump/static/js/main.0852ea58.chunk.js",
-    "main.js.map": "/dr-corona-bump/static/js/main.0852ea58.chunk.js.map",
+    "main.css": "/dr-corona-bump/static/css/main.78cb0f09.chunk.css",
+    "main.js": "/dr-corona-bump/static/js/main.1a1a72ea.chunk.js",
+    "main.js.map": "/dr-corona-bump/static/js/main.1a1a72ea.chunk.js.map",
     "runtime-main.js": "/dr-corona-bump/static/js/runtime-main.40aca070.js",
     "runtime-main.js.map": "/dr-corona-bump/static/js/runtime-main.40aca070.js.map",
     "static/js/2.86e545e3.chunk.js": "/dr-corona-bump/static/js/2.86e545e3.chunk.js",
@@ -10,7 +10,7 @@
     "index.html": "/dr-corona-bump/index.html",
     "service-worker.js": "/dr-corona-bump/service-worker.js",
     "service-worker.js.map": "/dr-corona-bump/service-worker.js.map",
-    "static/css/main.f781ee6e.chunk.css.map": "/dr-corona-bump/static/css/main.f781ee6e.chunk.css.map",
+    "static/css/main.78cb0f09.chunk.css.map": "/dr-corona-bump/static/css/main.78cb0f09.chunk.css.map",
     "static/js/2.86e545e3.chunk.js.LICENSE.txt": "/dr-corona-bump/static/js/2.86e545e3.chunk.js.LICENSE.txt",
     "static/media/main.css": "/dr-corona-bump/static/media/Letters-from-Sweden-HeroinePro-Bold.ad4e6564.otf",
     "static/media/corona-trademark.2d798160.svg": "/dr-corona-bump/static/media/corona-trademark.2d798160.svg",
@@ -21,7 +21,7 @@
   "entrypoints": [
     "static/js/runtime-main.40aca070.js",
     "static/js/2.86e545e3.chunk.js",
-    "static/css/main.f781ee6e.chunk.css",
-    "static/js/main.0852ea58.chunk.js"
+    "static/css/main.78cb0f09.chunk.css",
+    "static/js/main.1a1a72ea.chunk.js"
   ]
 }
