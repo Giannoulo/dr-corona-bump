@@ -1,19 +1,14 @@
 import React from "react";
-import {useSelector} from "react-redux";
-import {selectCount} from "../Redux/counterSlice";
 
 const GameOver = (props) => {
-  const count = useSelector(selectCount);
-
   const newTopScore = () => {
-    const topScore = parseInt(localStorage.getItem("topScore"));
-    const newScore = count ** 2;
-    if (newScore > topScore) {
+    const newScore = props.newScore ? props.newScore ** 2 : 0;
+    if (newScore > props.oldScore) {
       return (
         <>
           <div className="game-over-modal-text">Congratulations! You've set a new record!</div>
           <div className="game-over-modal-scores">
-            Top score: {topScore} New Top Score: {newScore}
+            Top score: {props.oldScore} {"\n"} New Top Score: {newScore}
           </div>
         </>
       );
@@ -22,12 +17,13 @@ const GameOver = (props) => {
         <>
           <div className="game-over-modal-text">Common... You can do better!</div>
           <div className="game-over-modal-scores">
-            Top score: {topScore} Score: {newScore}
+            Top score: {props.oldScore} {"\n"}Score: {newScore}
           </div>
         </>
       );
     }
   };
+
   return (
     <div id="gameover-div">
       {props.playGame === "start" ? (

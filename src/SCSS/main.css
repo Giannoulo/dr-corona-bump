@@ -95,6 +95,7 @@
       -ms-flex-align: center;
           align-items: center;
   color: #092e53;
+  white-space: pre-wrap;
 }
 
 #gameover-div .game-over-modal-text {
