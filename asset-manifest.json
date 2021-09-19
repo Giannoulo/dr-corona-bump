@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/dr-corona-bump/static/css/main.411d7494.chunk.css",
-    "main.js": "/dr-corona-bump/static/js/main.1d164428.chunk.js",
-    "main.js.map": "/dr-corona-bump/static/js/main.1d164428.chunk.js.map",
+    "main.js": "/dr-corona-bump/static/js/main.d230f383.chunk.js",
+    "main.js.map": "/dr-corona-bump/static/js/main.d230f383.chunk.js.map",
     "runtime-main.js": "/dr-corona-bump/static/js/runtime-main.40aca070.js",
     "runtime-main.js.map": "/dr-corona-bump/static/js/runtime-main.40aca070.js.map",
     "static/js/2.57bba554.chunk.js": "/dr-corona-bump/static/js/2.57bba554.chunk.js",
@@ -22,6 +22,6 @@
     "static/js/runtime-main.40aca070.js",
     "static/js/2.57bba554.chunk.js",
     "static/css/main.411d7494.chunk.css",
-    "static/js/main.1d164428.chunk.js"
+    "static/js/main.d230f383.chunk.js"
   ]
 }
