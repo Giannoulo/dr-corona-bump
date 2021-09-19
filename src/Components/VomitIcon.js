@@ -26,6 +26,7 @@ const SmileyIcon = (props) => {
       id: "vomit-icon",
     },
   };
+
   return (
     <div
       className="tile-divs"

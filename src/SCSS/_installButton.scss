@@ -1,10 +1,11 @@
 #install-button-constainer {
   position: absolute;
-  top: 83px;
-  right: 12px;
+  top: 5px;
+  left: 5px;
   color: white;
   opacity: 0;
-  transition: opacity 1000ms;
+  transition: opacity 800ms;
+  font-weight: 600;
   &.visible {
     opacity: 1;
   }

@@ -1,10 +1,10 @@
 import React from "react";
 
-import { useSelector } from "react-redux";
-import { selectCount } from "../Redux/counterSlice";
-import { selectLives } from "../Redux/livesSlice";
+import {useSelector} from "react-redux";
+import {selectCount} from "../Redux/counterSlice";
+import {selectLives} from "../Redux/livesSlice";
 
-import { calculateScore } from "../Utils/ControlsFunctions";
+import {calculateScore} from "../Utils/ControlsFunctions";
 import Timer from "./Timer";
 
 const Controls = () => {
@@ -14,9 +14,10 @@ const Controls = () => {
   return (
     <div className="container" id="controls-div">
       <span>
-        {`Score: ${calculateScore(count)} Time: `}
+        {`Time: `}
         <Timer count={count} />
-        {` Lives: ${lives}`}
+        {`  Points: ${calculateScore(count)}`}
+        {`  Lives: ${lives}`}
       </span>
     </div>
   );

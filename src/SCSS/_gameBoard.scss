@@ -1,16 +1,19 @@
 #game-board-div {
-  margin-top: 20px;
-  width: 80%;
+  background-color: $corona-yellow;
+  width: 92%;
+  border-radius: 30px;
+  padding: 20px 0px;
   flex-wrap: wrap;
   @include small-mobile-screen-down {
     width: 97%;
   }
 }
 
-#tongue-icon {
-  transform: scale(3vw) !important;
-  & path {
-    // stroke: red;
-    filter: drop-shadow(2px 1px 1px red);
-  }
+.game-icon {
+  width: 20vw;
+}
+
+.tile-divs {
+  height: 21vw;
+  margin: 0px 3px;
 }
