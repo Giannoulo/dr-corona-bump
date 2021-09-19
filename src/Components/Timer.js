@@ -5,7 +5,7 @@ import {useDispatch} from "react-redux";
 import {resetCount} from "../Redux/counterSlice";
 
 const Timer = (props) => {
-  const [time, setTime] = useState(3);
+  const [time, setTime] = useState(20);
   const dispatch = useDispatch();
 
   useEffect(() => {
