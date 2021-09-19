@@ -3,7 +3,7 @@ import React from "react";
 const TopScore = () => {
   return (
     <span className="container" id="topscore">
-      Top Score: {localStorage.getItem("topScore") ? localStorage.getItem("topScore") : "0"}
+      TOP SCORE: {localStorage.getItem("topScore") ? localStorage.getItem("topScore") : "0"}
     </span>
   );
 };
