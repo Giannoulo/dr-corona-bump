@@ -13,6 +13,7 @@ const DrCoronaIcon = (props) => {
   return (
     <div className="tile-divs">
       <img
+        draggable="false"
         src={drCorona}
         alt="dr-corona-icon"
         className="game-icon"

@@ -10,10 +10,10 @@
 }
 
 .game-icon {
-  width: 20vw;
+  width: #{"min(20vw, 100px)"};
 }
 
 .tile-divs {
-  height: 21vw;
+  height: #{"min(21vw, 100px)"};
   margin: 0px 3px;
 }

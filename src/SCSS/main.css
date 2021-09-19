@@ -48,11 +48,11 @@
 }
 
 .game-icon {
-  width: 20vw;
+  width: min(20vw, 100px);
 }
 
 .tile-divs {
-  height: 21vw;
+  height: min(21vw, 100px);
   margin: 0px 3px;
 }
 
@@ -85,6 +85,11 @@ body {
   left: 0px;
   margin: 0px;
   background-color: #ff603c;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -ms-user-select: none;
+      user-select: none;
 }
 
 .App {
@@ -118,5 +123,13 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+img {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -ms-user-select: none;
+      user-select: none;
 }
 /*# sourceMappingURL=main.css.map */
