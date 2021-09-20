@@ -21,6 +21,7 @@ const App = () => {
       {playGame ? (
         <>
           <Header />
+          <InstallButton />
           <GameOver
             playGame={playGame}
             oldScore={oldScore}
