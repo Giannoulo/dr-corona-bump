@@ -18,10 +18,10 @@ const App = () => {
   };
   return (
     <div className="App">
+      <Header />
+      <InstallButton />
       {playGame ? (
         <>
-          <Header />
-          <InstallButton />
           <GameOver
             playGame={playGame}
             oldScore={oldScore}
@@ -31,11 +31,9 @@ const App = () => {
         </>
       ) : (
         <>
-          <Header />
           <Controls playCallback={playCallback} />
           <GameBoard />
           <TopScore />
-          <InstallButton />
         </>
       )}
     </div>
