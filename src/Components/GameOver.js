@@ -30,7 +30,7 @@ const GameOver = (props) => {
         <>
           <h1>Start Game</h1>
           <div className="game-over-modal-text">
-            Welcome to Dr Corona the game! The doctor needs your help to fight the coronovirus. You
+            Welcome to Dr Corona the game! The doctor needs your help to fight the coronavirus. You
             have 20 seconds to eradicate as many as you can!
           </div>
           <button onClick={() => props.playCallback(null)}>Let's Go!</button>
