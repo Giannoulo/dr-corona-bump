@@ -29,7 +29,7 @@ const Timer = (props) => {
           const oldScore = parseInt(localStorage.getItem("topScore"));
           props.playCallback("gameOver", oldScore, props.count);
         } else {
-          props.playCallback("gameOver", 0);
+          props.playCallback("gameOver", 0, props.count);
         }
       } catch (error) {
         console.log("Get local storage item topScore error");
